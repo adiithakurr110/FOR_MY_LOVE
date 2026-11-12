@@ -1,0 +1,48 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+
+:root {
+  --background: #07040d;
+  --foreground: #f8fafc;
+  --primary: #c084fc;
+  --secondary: #f472b6;
+  --accent: #fb7185;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-primary: var(--primary);
+  --color-secondary: var(--secondary);
+  --color-accent: var(--accent);
+}
+
+body {
+  background-color: var(--background);
+  color: var(--foreground);
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+}
+
+::selection {
+  background: rgba(236, 72, 153, 0.35);
+  color: #ffffff;
+}
+
+button {
+  cursor: pointer;
+  user-select: none;
+}
+
+/* Custom romantic glow utilities */
+.glow-romantic {
+  filter: drop-shadow(0 0 16px rgba(244, 114, 182, 0.45)) drop-shadow(0 0 32px rgba(192, 132, 252, 0.25));
+}
+
+.text-glow-purple {
+  text-shadow: 0 0 20px rgba(192, 132, 252, 0.5), 0 0 40px rgba(168, 85, 247, 0.25);
+}
+
+.text-glow-pink {
+  text-shadow: 0 0 20px rgba(244, 114, 182, 0.6), 0 0 40px rgba(236, 72, 153, 0.3);
+}
